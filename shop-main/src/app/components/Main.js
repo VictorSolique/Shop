@@ -8,17 +8,20 @@ export default async function Main() {
         <main className={styles.main}>
             {data.map((products) =>
                 <div className={styles.card} key={products.id}>
-                    <p>{products.title}</p>
-                    <p style={{ color: "red" }}>{products.price}</p>
-                    <div className="img">
-                        <Image
-                            width={150}
-                            height={150}
-                            src={products.image} />
-                        <p>{products.description}</p>
-                        <p>Categoria: {products.category}</p>
-                        <p>Rating: {products.rating.count}</p>
+                    <Image width={150} height={150}
+                    src={products.image} />
+                    <p style={{fontSize: 20}}>{products.title}</p>
+                    <div>
+                        <p>{products.price}</p>
+                        <div style={{float: "right"}}>                             
+                            <p style={{margin: 0, padding: 0}}>{products.rating.rate} <span class="material-symbols-outlined">hotel_class</span></p>
+                            <p style={{margin: 0, padding: 0}}>{products.rating.count} <span class="material-symbols-outlined">group</span></p>
+                        </div>                         
                     </div>
+                                     
+                    <p>{products.description}</p>
+                    <p>Categoria: {products.category}</p>
+                    
                 </div>
             )}
         </main>

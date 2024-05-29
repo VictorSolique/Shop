@@ -10,7 +10,6 @@
 }
 .card {
     width: 300px;
-    padding: 20px;
     font-weight: bold;
     text-align: center;
     padding-inline: 10px;
@@ -19,7 +18,7 @@
     flex-direction: column;
     border-radius: 5%;
     align-items: center;
-    background-color: rgb(191, 217, 240);
+    background-color: rgb(255, 255, 255);
 }
 
 .img {
