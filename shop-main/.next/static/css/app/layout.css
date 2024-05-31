@@ -6,21 +6,40 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
+    padding-inline: 10px;
 }
 .header_menu__4KqqH li {
     list-style-type: none;
     display: inline;
 }
 .header_menu__4KqqH ul li a { 
-    padding: 2px 10px; 
+    padding: 10px 10px; 
     display: inline-block; /* visual do link */ 
-    background-color:#EDEDED; 
-    color: #333; 
+    color: #fff; 
     text-decoration: none; 
-    border-bottom:3px solid #EDEDED; 
 }
 .header_menu__4KqqH ul li a:hover { 
     background-color:#D6D6D6;
     color: #6D6D6D;
-    border-bottom:3px solid #EA0000;
-  }
+    border-radius: 10px;
+}
+.header_menu2__Qx_6I {
+    background-color: #c23636;
+    padding: 5px;
+    text-align: end;    
+}
+.header_menu2__Qx_6I button {
+    background-color: transparent;
+    border: 0;
+    padding: 10px;   
+    color: white;
+    
+}
+
+.header_menu2__Qx_6I button:hover {
+    cursor: pointer;
+    background-color: #ddd5d5;
+    color: black;
+    border-radius: 10px;
+}

@@ -6,6 +6,7 @@ export default async function Main() {
     const data = await response.json();
     return (
         <main className={styles.main}>
+            
             {data.map((products) =>
                 <div className={styles.card} key={products.id}>
                     <Image className={styles.img} width={150} height={150}
