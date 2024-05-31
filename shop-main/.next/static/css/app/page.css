@@ -1,0 +1,54 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/main.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.main_main__dEWbj {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 50px;    
+
+}
+.main_card__FvLzZ {    
+    width: 300px;
+    text-align: center;
+    padding-inline: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom, #fff 40%, #DDDEEE 90%);
+}
+
+.main_card__FvLzZ abbr {
+    text-decoration: none;
+}
+.main_card__FvLzZ abbr p span {
+    color: red;
+}
+
+.main_img__6IlDa {
+    margin: auto;
+}
+
+/* Estilos do menu suspenso */
+.main_dropdown__uxOOj {
+    display: none;
+}
+.main_buttonDropdown__FIPlW:focus-within + .main_dropdown__uxOOj {
+        display: block;        
+}
+.main_buttonDropdown__FIPlW {
+    border: 0;
+    /* background-color: rgb(201, 250, 120); */
+    background-color: #ce4343;
+    color: white;
+    padding: 3px 0px;
+    font-size: 16;
+}
+
+.main_buttonDropdown__FIPlW:focus-within::after {
+    content: " - toque para fechar";
+}

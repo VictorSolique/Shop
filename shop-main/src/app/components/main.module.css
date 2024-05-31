@@ -1,29 +1,51 @@
 .main {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
-    gap: 50px;
-    background-color: #fff;
+    gap: 50px;    
 
 }
-.card {
+.card {    
     width: 300px;
-    font-weight: bold;
     text-align: center;
     padding-inline: 10px;
-    height: 100%;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 5%;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, #fff 40%, #DDDEEE 90%);
+}
+
+.card abbr {
+    text-decoration: none;
+}
+.card abbr p span {
+    color: red;
 }
 
 .img {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
+    margin: auto;
 }
 
+/* Estilos do menu suspenso */
+.dropdown {
+    display: none;
+}
+.buttonDropdown:focus-within + .dropdown {
+        display: block;        
+}
+.buttonDropdown {
+    border: 0;
+    /* background-color: rgb(201, 250, 120); */
+    background-color: #ce4343;
+    color: white;
+    padding: 3px 0px;
+    font-size: 16;
+}
+
+.buttonDropdown:focus-within::after {
+    content: " - toque para fechar";
+}

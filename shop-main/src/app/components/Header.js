@@ -5,8 +5,8 @@ export default function Header() {
     return (
         <header className={styles.menu}>
             <div>
-                <Image width={20} height={20} src="https://br.pinterest.com/pin/215821007134385991/"/>
-                <h2>Platzi Fake Store API</h2>
+                <Image width={50} height={50} src="https://cdn-icons-png.flaticon.com/512/2697/2697432.png"/>
+                <h2 style={{display: "inline", paddingLeft: "10px"}}>Platzi Fake Store API</h2>
             </div>
             <ul>
                 <li><a href="#">Home</a></li>

@@ -1,6 +1,5 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-import Main from "./components/Main"
 
 export const metadata = {
   title: "Meu Shop.com",
@@ -17,9 +16,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       </head>
-      <body style={{padding: 0, margin: 0, fontFamily: "sans-serif"}}>
+      <body style={{padding: 0, margin: 0, fontFamily: "sans-serif", backgroundColor: "#DDDEEE"}}>
         <Header />
-        <Main />
         {children}
         <Footer />
       </body>

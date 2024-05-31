@@ -1,11 +1,10 @@
 .menu {
-    background-color: lightblue;
+    background-color: #ce4343;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .menu li {
-    
     list-style-type: none;
     display: inline;
 }

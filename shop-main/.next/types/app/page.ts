@@ -1,4 +1,4 @@
-// File: C:\Users\victo\OneDrive\Área de Trabalho\Shop\shop-main\src\app\page.js
+// File: C:\Users\victo\OneDrive\Documentos\PENDRIVE Documentos\VICTOR 1B PENDRIVE\5° SEMESTRE\PTAC 3\Shop\shop-main\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
