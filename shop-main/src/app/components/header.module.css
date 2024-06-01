@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 .menu {
     background-color: #ce4343;
     display: flex;
@@ -11,15 +13,20 @@
     display: inline;
 }
 .menu ul li a { 
+    transition: 1s;
+    font-weight: 600;
     padding: 10px 10px; 
+    margin-left: 10px;
     display: inline-block; /* visual do link */ 
     color: #fff; 
     text-decoration: none; 
+    border-radius: 12px;
 }
 .menu ul li a:hover { 
+    transition: 0.5s;
     background-color:#D6D6D6;
     color: #6D6D6D;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 .menu2 {
     background-color: #c23636;
@@ -27,16 +34,19 @@
     text-align: end;    
 }
 .menu2 button {
+    font-family: "Playfair Display", sans-serif;
+    transition: 1s;
     background-color: transparent;
     border: 0;
     padding: 10px;   
     color: white;
-    
+    border-radius: 10px;
 }
 
 .menu2 button:hover {
+    transition: 0.5s;
     cursor: pointer;
     background-color: #ddd5d5;
-    color: black;
+    color: #6D6D6D;
     border-radius: 10px;
 }

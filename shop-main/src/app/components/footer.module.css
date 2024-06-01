@@ -1,0 +1,25 @@
+.footer {
+    background-color: #c23636; 
+    color: white;
+}
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 5% 0px 5%;
+}
+
+.rodape ul {
+    padding-inline-start: 0px;
+}
+
+.rodape ul li {
+    display: inline;
+}
+.rodape ul li a {
+    text-decoration: none;
+    padding: 10px 10px 5px 10px;
+}
+.rodape ul li a:hover {
+    border-bottom: 1px solid white;
+}

@@ -41,7 +41,6 @@
 }
 .main_buttonDropdown__FIPlW {
     border: 0;
-    /* background-color: rgb(201, 250, 120); */
     background-color: #ce4343;
     color: white;
     padding: 3px 0px;
@@ -51,3 +50,4 @@
 .main_buttonDropdown__FIPlW:focus-within::after {
     content: " - toque para fechar";
 }
+

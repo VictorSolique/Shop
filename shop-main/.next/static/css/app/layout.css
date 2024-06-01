@@ -1,6 +1,8 @@
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/header.module.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 .header_menu__4KqqH {
     background-color: #ce4343;
     display: flex;
@@ -14,15 +16,20 @@
     display: inline;
 }
 .header_menu__4KqqH ul li a { 
+    transition: 1s;
+    font-weight: 600;
     padding: 10px 10px; 
+    margin-left: 10px;
     display: inline-block; /* visual do link */ 
     color: #fff; 
     text-decoration: none; 
+    border-radius: 12px;
 }
 .header_menu__4KqqH ul li a:hover { 
+    transition: 0.5s;
     background-color:#D6D6D6;
     color: #6D6D6D;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 .header_menu2__Qx_6I {
     background-color: #c23636;
@@ -30,16 +37,48 @@
     text-align: end;    
 }
 .header_menu2__Qx_6I button {
+    font-family: "Playfair Display", sans-serif;
+    transition: 1s;
     background-color: transparent;
     border: 0;
     padding: 10px;   
     color: white;
-    
+    border-radius: 10px;
 }
 
 .header_menu2__Qx_6I button:hover {
+    transition: 0.5s;
     cursor: pointer;
     background-color: #ddd5d5;
-    color: black;
+    color: #6D6D6D;
     border-radius: 10px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/footer.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__woFMY {
+    background-color: #c23636; 
+    color: white;
+}
+.footer_rodape__zEx9K {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 5% 0px 5%;
+}
+
+.footer_rodape__zEx9K ul {
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+}
+
+.footer_rodape__zEx9K ul li {
+    display: inline;
+}
+.footer_rodape__zEx9K ul li a {
+    text-decoration: none;
+    padding: 10px 10px 5px 10px;
+}
+.footer_rodape__zEx9K ul li a:hover {
+    border-bottom: 1px solid white;
 }
