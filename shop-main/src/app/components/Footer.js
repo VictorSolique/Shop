@@ -14,7 +14,7 @@ export default function Footer() {
                         <li><a href="#"><Image width={23} height={23} src={"https://www.iconsdb.com/icons/preview/white/pinterest-xxl.png"} /></a></li>
                     </ul>
                 </div>
-                <p style={{fontSize: 14, width: "50%", fontFamily: "Playfair Display, serif"}}>Fundada em 15 de fevereiro de 2007, nossa empresa tem como objetivo vender as melhores roupas luxuosas do Brasil.</p>
+                <p style={{fontSize: 14, width: "50%", fontFamily: "Playfair Display, serif"}}>Fundada em 15 de fevereiro de 2007, nossa empresa tem como objetivo vender as melhores roupas luxuosas de nossa coleção exclusiva.</p>
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                     <Image style={{paddingInline: "10px"}} width={50} height={50} src="https://www.iconsdb.com/icons/preview/white/store-xxl.png"/>
                     <span>Platzi Store</span>

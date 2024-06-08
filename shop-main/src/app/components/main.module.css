@@ -1,5 +1,5 @@
 .main {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,14 +29,15 @@
     margin: auto;
 }
 
-/* Estilos do menu suspenso */
+/* Estilos do menu suspenso de Descrição */
 .dropdown {
     display: none;
 }
 .buttonDropdown:focus-within + .dropdown {
-        display: block;        
+    display: block;        
 }
 .buttonDropdown {
+    font-family: "Playfair Display", sans-serif;
     border: 0;
     background-color: #ce4343;
     color: white;
@@ -46,4 +47,27 @@
 
 .buttonDropdown:focus-within::after {
     content: " - toque para fechar";
+}
+.buttonDropdown:hover {
+    background-color: #c23636;
+}
+
+.ordenar {text-align: center; height: 30px}
+.ordenar div {
+    display: inline;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+}
+.ordenar button {
+    transition: 0.2s;
+    border: 0;    
+    background-color: #DDDEEE;
+    margin-inline: 5px;
+    padding: 0;
+}
+.ordenar button:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: #ee0d0d;
+    font-size: 20px;
 }
