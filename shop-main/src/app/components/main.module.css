@@ -61,7 +61,7 @@
 .ordenar button {
     transition: 0.2s;
     border: 0;    
-    background-color: #DDDEEE;
+    background: none;
     margin-inline: 5px;
     padding: 0;
 }
@@ -70,4 +70,16 @@
     cursor: pointer;
     color: #ee0d0d;
     font-size: 20px;
+}
+
+.favorite {
+    text-align: end;
+    margin: 0;
+    padding-right: 10px;
+    height: 25px;
+}
+
+.favorite span:hover {
+    cursor: pointer;
+    color: red;
 }

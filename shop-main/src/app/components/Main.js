@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image";
 import styles from "./main.module.css";
+import Spinner from "./Spinner";
 
 export default function Main() {
     const [listProducts, setListProducts] = useState([]);
@@ -32,6 +33,22 @@ export default function Main() {
         const newList = [...listProducts].sort((a,b) => a.price - b.price);
         setListProducts(newList);
     }
+    if(listProducts[0] == null) {
+        return (
+            <>
+            <div className={styles.ordenar}>
+                <div>
+                    <h4 style={{display: "inline", paddingRight: "10px"}}>Classificar por:</h4>
+                    <button onClick={orderAZ}>A à Z</button>
+                    <button onClick={orderZA}>Z a A</button>
+                    <button onClick={orderPriceMenor}>Menor preço</button>
+                    <button onClick={orderPriceMaior}>Maior preço</button>
+                </div>
+            </div>
+            <Spinner />        
+            </>
+        )
+    }
     
     return (
         <>
@@ -39,7 +56,7 @@ export default function Main() {
             <div>
                 <h4 style={{display: "inline", paddingRight: "10px"}}>Classificar por:</h4>
                 <button onClick={orderAZ}>A à Z</button>
-                <button onClick={orderZA}>Z à A</button>
+                <button onClick={orderZA}>Z a A</button>
                 <button onClick={orderPriceMenor}>Menor preço</button>
                 <button onClick={orderPriceMaior}>Maior preço</button>
             </div>
@@ -47,6 +64,7 @@ export default function Main() {
         <main className={styles.main}>            
             {listProducts.map((products) =>
                 <div className={styles.card} key={products.id}>
+                    <p className={styles.favorite}><span className="material-symbols-outlined">favorite</span></p>
                     <Image className={styles.img} width={150} height={150}
                     src={products.image} />                    
                     <h4 style={{fontSize: 20, paddingBottom: 5, marginBottom: 0}}>{products.title}</h4>
