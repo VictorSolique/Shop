@@ -36,9 +36,6 @@
 .main_dropdown__uxOOj {
     display: none;
 }
-.main_buttonDropdown__FIPlW:focus-within + .main_dropdown__uxOOj {
-    display: block;        
-}
 .main_buttonDropdown__FIPlW {
     font-family: "Playfair Display", sans-serif;
     border: 0;
@@ -48,9 +45,6 @@
     font-size: 16;
 }
 
-.main_buttonDropdown__FIPlW:focus-within::after {
-    content: " - toque para fechar";
-}
 .main_buttonDropdown__FIPlW:hover {
     background-color: #c23636;
 }
