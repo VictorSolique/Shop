@@ -18,11 +18,6 @@ export default function Header() {
                     <li><abbr title="Entrar"><a href="#" className={styles.iconHeader}><span className="material-symbols-outlined">person</span></a></abbr></li>
                 </ul>
             </div>
-            <div className={styles.menu2}>
-                <span className="material-symbols-outlined">search</span>
-                <input placeholder="Pesquisar"/>
-                <button style={{display: "inline", fontSize: 17}}>Adicionar um novo produto</button>
-            </div>
             <div style={{textAlign: "center", paddingBlock: "30px"}}>
                 <h1>Platzi Store</h1>
                 <h3 style={{marginBottom: 0}}>Você com a mais luxuosa variedade de <br/> roupas de nossa coleção exclusiva</h3>

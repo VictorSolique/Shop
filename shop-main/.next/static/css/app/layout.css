@@ -71,42 +71,5 @@
     background-color: gold !important;
 }
 
-.header_menu2__Qx_6I {
-    background-color: #c23636;
-    padding: 5px;
-    justify-content: end !important;
-    color: white;  
-}
-
-.header_menu2__Qx_6I input {
-    background-color: #fff;
-    border: 0;
-    padding: 10px;
-    padding-left: 15px;
-    margin-inline: 10px;
-    border-radius: 15px;
-    color: #6D6D6D;
-}
-
-.header_menu2__Qx_6I input:focus {
-    outline: none;
-}
-
-.header_menu2__Qx_6I button {
-    transition: 1s;
-    background-color: transparent;
-    border: 0;
-    padding: 10px;   
-    color: white;
-    border-radius: 10px;
-}
-
-.header_menu2__Qx_6I button:hover {
-    transition: 0.5s;
-    cursor: pointer;
-    background-color: #ddd5d5;
-    color: #6D6D6D;
-    border-radius: 10px;
-}
 
 /* #5a0000 --> Cor de texto eu caso queira trocar tudo o header */

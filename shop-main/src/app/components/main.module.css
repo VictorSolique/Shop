@@ -7,6 +7,9 @@
     flex-wrap: wrap;
     gap: 50px;   
 }
+
+.main h4 { min-height: 60px; }
+
 .card {    
     width: 300px;
     text-align: center;
@@ -18,21 +21,12 @@
     background-image: linear-gradient(to bottom, #fff 40%, #DDDEEE 90%);
 }
 
-.card abbr {
-    text-decoration: none;
-}
-.card abbr p span {
-    color: red;
-}
-
-.img {
-    margin: auto;
-}
+.card abbr { text-decoration: none; }
+.card abbr p span { color: red; }
+.img { margin: auto; }
 
 /* Estilos do menu suspenso de Descrição */
-.dropdown {
-    display: none;
-}
+.dropdown { display: none; }
 .buttonDropdown {
     font-family: "Playfair Display", sans-serif;
     border: 0;
@@ -42,11 +36,9 @@
     font-size: 16;
 }
 
-.buttonDropdown:hover {
-    background-color: #c23636;
-}
+.buttonDropdown:hover { background-color: #c23636; }
 
-.ordenar {text-align: center; height: 30px}
+.ordenar { text-align: center; height: 30px; }
 .ordenar div {
     display: inline;
     padding-left: 5px;
@@ -76,4 +68,34 @@
 .favorite span:hover {
     cursor: pointer;
     color: red;
+}
+
+/* Botão de pesquisar */
+
+.menu2 {
+    display: flex;
+    align-items: center;
+    padding-block: 20px;  
+    background-color: #fff;
+    border: 0;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    padding-inline: 10px;
+    padding-left: 15px;
+    border-radius: 15px;
+    color: #6D6D6D;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px #ee0d0d;
+}
+.menu2 input {
+    background-color: none;
+    border: 0;
+    text-align: center;
+    color: #6D6D6D;
+    width: 250px;
+}
+
+.menu2 input:focus {
+    outline: none;
 }
