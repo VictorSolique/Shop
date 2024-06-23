@@ -31,7 +31,6 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/header.module.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
 .header_menu__4KqqH {
-    background-color: #ce4343;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,27 +47,40 @@
     display: inline;
 }
 .header_menu__4KqqH ul li a { 
-    transition: 1s;
     font-weight: 600;
     padding: 10px 10px; 
     margin-left: 5px;
     display: inline-block; /* visual do link */ 
     color: #fff; 
     text-decoration: none; 
-    border-radius: 12px;
+    border-bottom: 1px solid #ffffff00;
 }
 .header_menu__4KqqH ul li a:hover { 
-    transition: 0.3s;
-    background-color:#D6D6D6;
-    color: #6D6D6D;
-    border-radius: 12px;
+    transition: 0.1s;
+    border-bottom: 1px solid #fff;
 }
 .header_iconHeader__CS4op {
     padding: 5px 5px !important;
     margin-left: 5px !important;
+    color: #6D6D6D;
+    border-radius: 12px;
 }
 .header_iconHeader__CS4op:hover {
     background-color: gold !important;
+    border-bottom: 0 !important;
+}
+
+.header_img__Mo7bY {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+  
+.header_content__AbsK3 {
+    text-shadow: #111 5px 0 10px;
+    position: relative;
+    padding: 10px;
+    color: white;
 }
 
 

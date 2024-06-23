@@ -65,6 +65,29 @@ export default function Main() {
     if(listProducts[0] == null) {
         return (
             <>
+            <div className={styles.posicao}>
+                <div className={styles.menu2}>
+                    <span className="material-symbols-outlined">search</span>
+                    <input type="text" value={search} placeholder="Pesquisar produto específico" onChange={(e) => searchText(e.target.value)} />
+                </div>
+                <div className={styles.ordenar}>
+                    <div>
+                        <h4 style={{display: "inline", paddingRight: "10px"}}>Classificar por:</h4>
+                        <button onClick={orderAZ}>A à Z</button>
+                        <button onClick={orderZA}>Z a A</button>
+                        <button onClick={orderPriceMenor}>Menor preço</button>
+                        <button onClick={orderPriceMaior}>Maior preço</button>
+                    </div>
+                </div>
+            </div>
+            <Spinner />        
+            </>
+        )
+    }
+        
+    return (
+        <>
+        <div className={styles.posicao}>
             <div className={styles.menu2}>
                 <span className="material-symbols-outlined">search</span>
                 <input type="text" value={search} placeholder="Pesquisar produto específico" onChange={(e) => searchText(e.target.value)} />
@@ -77,25 +100,6 @@ export default function Main() {
                     <button onClick={orderPriceMenor}>Menor preço</button>
                     <button onClick={orderPriceMaior}>Maior preço</button>
                 </div>
-            </div>
-            <Spinner />        
-            </>
-        )
-    }
-        
-    return (
-        <>
-        <div className={styles.menu2}>
-            <span className="material-symbols-outlined">search</span>
-            <input type="text" value={search} placeholder="Pesquisar produto específico" onChange={(e) => searchText(e.target.value)} />
-        </div>
-        <div className={styles.ordenar}>
-            <div>
-                <h4 style={{display: "inline", paddingRight: "10px"}}>Classificar por:</h4>
-                <button onClick={orderAZ}>A à Z</button>
-                <button onClick={orderZA}>Z a A</button>
-                <button onClick={orderPriceMenor}>Menor preço</button>
-                <button onClick={orderPriceMaior}>Maior preço</button>
             </div>
         </div>
         <main className={styles.main}>            

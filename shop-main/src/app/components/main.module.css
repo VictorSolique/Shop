@@ -72,20 +72,48 @@
 
 /* Botão de pesquisar */
 
+.posicao {
+    position: relative;
+    margin: auto;
+    margin-inline: 10%;
+    border-radius: 15px;
+    padding-block: 20px;
+    margin-top: -50px !important;
+    background-color: #fff;
+}
+
+@media (min-width: 1050px) {
+    .posicao {
+        display: flex;
+        padding-inline: 0px;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .menu2, .ordenar {
+        margin-inline: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .menu2 {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+  
+
 .menu2 {
     display: flex;
     align-items: center;
     padding-block: 20px;  
     background-color: #fff;
     border: 0;
-    margin: auto;
     width: 300px;
     padding: 10px;
     padding-inline: 10px;
     padding-left: 15px;
     border-radius: 15px;
     color: #6D6D6D;
-    margin-bottom: 20px;
     box-shadow: 3px 3px #ee0d0d;
 }
 .menu2 input {
